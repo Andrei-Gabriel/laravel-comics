@@ -1,0 +1,50 @@
+.main {
+    background-color: #000;
+    margin-top: 1px; //Per vedere tutto il bordo di #active
+}
+.hero {
+    background-image: url('../img/jumbotron.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+}
+.main-container {
+    @include width-content;
+    width: 100%;
+    padding: 40px 0 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    .current {
+        background-color: #0282f9;
+        padding: 10px 15px;
+        height: $currentHeight;
+        position: absolute;
+        top: -$currentHeight; /*Non va bene con -50% e non accetta % alla fine*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translate(0, 50%);
+        span {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 20px;
+        }
+    }
+    .card {
+        width: calc((100% / 6) - 30px);
+        margin: 0px 15px 20px;
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 100%;
+        }
+        span {
+            margin-top: 5px;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}

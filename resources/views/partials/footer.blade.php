@@ -35,6 +35,7 @@
                 <span class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia tenetur temporibus et, voluptas adipisci!</span>
                 <span class="gray">Lorem, ipsum dolor.</span>
             </div>
+            {{-- Il percorso parte dal file app.css (public/css/app.css) --}}
             <img src="{{asset('img/dc-logo-bg.png')}}">
         </div>
     </div>
