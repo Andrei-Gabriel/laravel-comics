@@ -1,0 +1,40 @@
+header {
+    .header-container{
+        @include width-content;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        // Logo
+        .logo {
+            img {
+                height: 70px;
+            }
+        }
+        .header-nav{
+            width: 55%;
+            // Lista di links .header-nav
+            ul {
+                display: flex;
+                justify-content: space-between;
+                // List item
+                li {
+                    list-style: none;
+                    // Link
+                    a {
+                        display: inline-block;
+                        line-height: 100px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: black;
+                    }
+                    #active {
+                        border-bottom: 3px solid #0282f9;
+                        color: #0282f9;
+                    }
+                }
+            }
+        }
+    }
+}
